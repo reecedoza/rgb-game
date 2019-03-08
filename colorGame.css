@@ -15,6 +15,8 @@ body {
     padding-bottom: 30%;
     float: left;
     margin: 1.66%;
+
+    border-radius: 30px;
 }
 
 h1 {
@@ -33,17 +35,30 @@ h1 {
     height: 30px;
     margin: 0px;
 
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 2fr;
+    align-items: center;
     text-align: center;
 }
 
-#stripe button {
+button {
     height: 30px;
+    font-weight: bold;
+    background-color:white;
+    color: steelblue;
+    cursor: pointer;
+    border: none;
 }
 
 .selected {
-    background-color: blue;
+    background-color: steelblue;
+    color: white;
 }
 
 #colorDisplay {
     font-size: 200%;
+}
+
+#message {
+    color: steelblue;
 }

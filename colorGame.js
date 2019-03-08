@@ -65,6 +65,8 @@ resetButton.addEventListener("click", function(){
     h1.style.backgroundColor = "steelblue"
 
     resetButton.textContent = "New Colors"
+
+    messageDisplay.textContent = ""
 });
 
 colorDisplay.textContent = pickedColor;
@@ -80,7 +82,7 @@ for(var i = 0; i < squares.length; i++){
             changeColors(pickedColor);
             h1.style.backgroundColor = pickedColor;
         } else {
-            this.style.backgroundColor = "steelblue";
+            this.style.backgroundColor = "#232323";
             messageDisplay.textContent = "Try Again!"
         }
     });
@@ -112,5 +114,5 @@ function randomColor(){
     var g = String(Math.floor(Math.random() * 256));
     var b = String(Math.floor(Math.random() * 256));
 
-    return "RGB("  + r + ", " + g + ", " + b + ")";
+    return "rgb("  + r + ", " + g + ", " + b + ")";
 }
